@@ -1,0 +1,22 @@
+{
+    "name": "ravindu/php-clean-text",
+    "description": "A library for cleaning your text.",
+    "keywords": [
+        "PHP", "Text Clean", "URL Remove", "Numbers Remove"
+    ],
+    "type": "library",
+    "license": "LGPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "Ravindu\\PhpCleanText\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ravindu Thaveesha",
+            "email": "thaveesha.ravindu2@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
