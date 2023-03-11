@@ -2,7 +2,7 @@
 
 namespace Ravindu\PhpCleanText;
 
-Class Numbers {
+Class Numbers implements CharacterInterface {
 
     /**
      * Removes all numerical characters from a given string.
@@ -11,7 +11,7 @@ Class Numbers {
      * @return string The resulting string with all numerical characters removed.
      */
 
-    public static function remove(string $text = ''): string
+    public function remove(string $text = ''): string
     {
         return preg_replace('/[0-9]+/', '', $text);
     }
