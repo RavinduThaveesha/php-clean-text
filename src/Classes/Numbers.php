@@ -1,6 +1,8 @@
 <?php
 
-namespace Ravindu\PhpCleanText;
+namespace Ravindu\PhpCleanText\Classes;
+
+use Ravindu\PhpCleanText\Interfaces\CharacterInterface;
 
 Class Numbers implements CharacterInterface {
 
@@ -11,9 +13,8 @@ Class Numbers implements CharacterInterface {
      * @return string The resulting string with all numerical characters removed.
      */
 
-    public function remove(string $text = ''): string
-    {
-        return preg_replace('/[0-9]+/', '', $text);
+    public function remove(string $text = ''): string {
+        return preg_replace('/[0-9.]+/', '', $text);
     }
 
 }

@@ -1,6 +1,8 @@
 <?php
 
-namespace Ravindu\PhpCleanText;
+namespace Ravindu\PhpCleanText\Classes;
+
+use Ravindu\PhpCleanText\Interfaces\CharacterInterface;
 
 Class HashTags implements CharacterInterface {
 

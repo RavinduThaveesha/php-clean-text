@@ -1,6 +1,8 @@
 <?php
 
-namespace Ravindu\PhpCleanText;
+namespace Ravindu\PhpCleanText\Classes;
+
+use Ravindu\PhpCleanText\Interfaces\CharacterInterface;
 
 Class SpecialCharacters implements CharacterInterface {
 
@@ -19,8 +21,7 @@ Class SpecialCharacters implements CharacterInterface {
      * @return string The resulting string with all special characters removed.
      */
 
-    public function remove(string $text = ''): string
-    {
+    public function remove(string $text = ''): string {
         return str_replace($this->specialCharacters, '', $text);
     }
 
