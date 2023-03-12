@@ -7,11 +7,15 @@ use Ravindu\PhpCleanText\Classes\HashTags;
 
 class HashTagsTest extends TestCase {
 
-    public function testRemoveWithoutSpace() {
+    public function testRemoveHashTag() {
+        $this->assertEquals('', (new HashTags())->remove('#hashtag'));
+    }
+
+    public function testRemoveHashTagWithoutSpace() {
         $this->assertEquals('test', (new HashTags())->remove('test#hashtag'));
     }
 
-    public function testRemoveWithSpace() {
+    public function testRemoveHashTagWithSpace() {
         $this->assertEquals('test ', (new HashTags())->remove('test #hashtag'));
     }
 }
